@@ -23,7 +23,7 @@ def wishMe():
     else:
         speak("Good evening")
 
-    speak("I am Nargis. please tell me how may i help you?")    
+    speak("I am Hulk. please tell me how may i help you?")    
 def takeCommand():
     #It takes microphone input from the user and returns string output
     r = sr.Recognizer()
@@ -67,7 +67,7 @@ if __name__=="__main__" :
         elif 'open google' in query:
             webbrowser.open("google.com")
         elif 'play music' in query:
-            music_dir = 'C:\\Desktop\\songs'
+            music_dir = 'C:\\Users\\admin\\Desktop\\songs'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
